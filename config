@@ -1,0 +1,17 @@
+apiVersion: v1
+clusters:
+- cluster:
+    server: https://192.168.56.100:6443
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: dashboard-admin
+  name: dashboard-admin@kubernetes
+current-context: dashboard-admin@kubernetes
+kind: Config
+preferences: {}
+users:
+- name: dashboard-admin
+  user:
+    token: eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLXZ6cm5zIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJmNWQ3ZWJiNi00YjQ0LTRiYzUtODk0NS03M2ZiMjc5Y2IwZmYiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06YWRtaW4tdXNlciJ9.F_nId71jVmoviwaWqKfICYbTaBBf8LGpmyIdFDE-QWoe-s__BP3IzwP_pdOw4ro_SQnsRrv39A7KSZ0FYgETcFvvdkDiFWALLj3UOJiNcPUXBNQyDquhVKGOU8nWwAMuSWwBs80LfKByG4X0Qn9r_pS2lyo57HK0kAOQlvVb7VHePkkLjt1ofq-K4miYQDQeqyQrRCXkW12UxfEZIFh0ANH5KOnmOUIGjJFJcHEsdQWbYUxRkWMqQPgSsaBcpioTmgkuGr46Z7Vny6RNozaw24-zj5xQOTP35pgsoTIZwHODjHoSKpYG4LZoVv45dWFdT9vJlaFkUl_IGA4riJDuyQ
